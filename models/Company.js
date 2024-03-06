@@ -40,6 +40,10 @@ const CompanySchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    deadline:{
+        type: Date,
+        required: true
+    },
     date:{
         type: Date,
         default: Date.now

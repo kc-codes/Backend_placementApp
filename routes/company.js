@@ -42,7 +42,8 @@ router.post('/addcampuscompany', fetchuser, async (req, res) =>{
             job_role: req.body.job_role,
             type_of_organization : req.body.type_of_organization,
             total_employees: req.body.total_employees,
-            description: req.body.description
+            description: req.body.description,
+            deadline: req.body.deadline
         })
         
         success = true
@@ -70,7 +71,8 @@ router.post('/addmycompany', fetchuser, async (req, res) =>{
             job_role: req.body.job_role,
             type_of_organization : req.body.type_of_organization,
             total_employees: req.body.total_employees,
-            description: req.body.description
+            description: req.body.description,
+            interview_date: req.body.interview_date
         })
         
         success = true

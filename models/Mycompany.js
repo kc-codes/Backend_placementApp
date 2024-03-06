@@ -40,6 +40,10 @@ const MycompanySchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    interview_date:{
+        type: Date,
+        required: true
+    },
     date:{
         type: Date,
         default: Date.now
