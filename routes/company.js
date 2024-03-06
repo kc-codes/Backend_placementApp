@@ -35,6 +35,7 @@ router.post('/addcampuscompany', fetchuser, async (req, res) =>{
     try {
         const user = await company.create({
             university: req.body.university,
+            name: req.body.name,
             email: req.body.email,
             loaction: req.body.loaction,
             salary: req.body.salary,
@@ -64,6 +65,7 @@ router.post('/addmycompany', fetchuser, async (req, res) =>{
     try {
         const user = await mycompany.create({
             university: req.body.university,
+            name: req.body.name,
             email: req.body.email,
             loaction: req.body.loaction,
             salary: req.body.salary,

@@ -5,6 +5,10 @@ const MycompanySchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'university',
     },  
+    name:{
+        type: String,
+        required: true,
+    },
     email:{
         type: String,
         required: true,
