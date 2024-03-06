@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose
-const CompanySchema = new mongoose.Schema({
+const MycompanySchema = new mongoose.Schema({
     university:{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'university',
@@ -48,5 +48,5 @@ const CompanySchema = new mongoose.Schema({
 
 });
 
-const User = mongoose.model('company', CompanySchema);
+const User = mongoose.model('mycompany', MycompanySchema);
 module.exports = User
