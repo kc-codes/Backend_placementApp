@@ -28,6 +28,10 @@ app.use('/api/note', require('./routes/note'))
 app.use('/api/sentiments', require('./routes/sentiments'))
 app.use('/api/assesment', require('./routes/assesment'))
 
+// placement
+app.use('/api/company', require('./routes/company'))
+
+
 
 
 app.listen(port, () => {
