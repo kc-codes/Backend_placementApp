@@ -30,6 +30,7 @@ app.use('/api/assesment', require('./routes/assesment'))
 
 // placement
 app.use('/api/company', require('./routes/company'))
+app.use('/api/university', require('./routes/university'))
 
 
 
