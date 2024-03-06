@@ -30,6 +30,18 @@ catch (error) {
 })
 
 
+router.get('/getuniversityname', fetchuser, async(req, res) =>{
+    try {
+        const notes = await university.find();
+        res.json(notes)
+    } catch (error) {
+    console.log(error.message)
+    res.status(500).send("Some error occured")
+    }
+})
+
+
+
 
 
 module.exports = router
